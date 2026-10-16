@@ -1,7 +1,7 @@
 # CP06 — Smart Factory | Edge Computing
 
 - **Curso:** Ciências da Computação — 2º ano
-- **Turma:** não informada (atualizar antes da entrega)
+- **Turma:** 2CCPH
 - **Equipe:** João Victor Alves de Abreu e Rodrigo Kenshin Viana Matayoshi
 
 ## Integrantes
@@ -11,10 +11,10 @@
 
 ## Links obrigatórios da entrega
 
-- **Projeto Wokwi:** PENDENTE — criar/importar a simulação no Wokwi e substituir por link público funcional.
+- **Projeto Wokwi:** [CP06 - Smart Factory | Edge Computing](https://wokwi.com/projects/478002639902752769) — projeto público; compilado no Wokwi e conectado ao HiveMQ.
 - **Vídeo YouTube (Não listado):** PENDENTE — gravar demonstração de 2 a 5 minutos e inserir o link.
 
-> Os dois links precisam estar acessíveis sem convite ou autorização. O diagrama e firmware da pasta `firmware/` são a base pronta para importar/compilar no Wokwi. Nenhum link externo foi inventado.
+> O link do vídeo ainda precisa ser incluído antes da entrega. O repositório contém também os arquivos equivalentes usados na simulação Wokwi.
 
 ## Arquitetura
 
@@ -42,10 +42,10 @@ O broker apenas transporta mensagens. A regra de estado e os LEDs são determina
 ### Tópico MQTT
 
 ```text
-edge/2ano/turma-nao-informada/cp06/equipe-b9c1a2/dados
+edge/2ano/2CCPH/cp06/equipe-b9c1a2/dados
 ```
 
-**Atenção:** `turma-nao-informada` é provisório porque a turma não veio na solicitação. Antes da entrega, troque esse segmento pelo nome/número real da turma **nos três lugares**: `firmware/src/main.cpp`, `compose.yaml` e este README. O broker é público: o tópico e os identificadores de cliente foram anonimizados; publique somente dados simulados, sem informações pessoais. Os client IDs (`cp06-esp32-...` e `cp06-api-...`) são diferentes.
+O tópico está sincronizado no firmware, na API e no Compose. O broker é público: use apenas dados simulados; os client IDs do ESP32 e da API são distintos.
 
 ## Componentes Wokwi
 

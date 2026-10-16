@@ -12,7 +12,7 @@ _reading_lock = threading.Lock()
 
 BROKER_HOST = os.getenv("MQTT_BROKER", "broker.hivemq.com")
 BROKER_PORT = int(os.getenv("MQTT_PORT", "1883"))
-MQTT_TOPIC = os.getenv("MQTT_TOPIC", "edge/2ano/turma-nao-informada/cp06/equipe-b9c1a2/dados")
+MQTT_TOPIC = os.getenv("MQTT_TOPIC", "edge/2ano/2CCPH/cp06/equipe-b9c1a2/dados")
 MQTT_CLIENT_ID = os.getenv("MQTT_CLIENT_ID", "cp06-api-equipe-b9c1a2")
 
 

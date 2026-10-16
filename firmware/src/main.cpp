@@ -12,7 +12,7 @@ const char *WIFI_SSID = "Wokwi-GUEST";
 const char *WIFI_PASSWORD = "";
 const char *MQTT_HOST = "broker.hivemq.com";
 const uint16_t MQTT_PORT = 1883;
-const char *MQTT_TOPIC = "edge/2ano/turma-nao-informada/cp06/equipe-b9c1a2/dados";
+const char *MQTT_TOPIC = "edge/2ano/2CCPH/cp06/equipe-b9c1a2/dados";
 const char *MQTT_CLIENT_ID = "cp06-esp32-equipe-b9c1a2";
 const unsigned long PUBLISH_INTERVAL_MS = 5000;
 
