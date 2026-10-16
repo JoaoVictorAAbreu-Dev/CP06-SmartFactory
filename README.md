@@ -69,7 +69,7 @@ cd firmware
 pio run
 ```
 
-As bibliotecas Arduino para DHT22 e PubSubClient estão definidas em `firmware/platformio.ini`. Monitor serial a 115200 bps.
+As bibliotecas Arduino para DHT22 e PubSubClient estão definidas em `firmware/platformio.ini` e `firmware/libraries.txt` (Wokwi). Monitor serial a 115200 bps.
 
 ## Executar API e dashboard com Docker Compose
 

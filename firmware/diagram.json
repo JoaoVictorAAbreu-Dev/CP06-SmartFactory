@@ -3,7 +3,7 @@
   "author": "Equipe CP06 - João Victor e Rodrigo Kenshin",
   "editor": "wokwi",
   "parts": [
-    { "type": "board-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
     { "type": "wokwi-dht22", "id": "dht", "top": -95, "left": 250, "attrs": { "temperature": "30", "humidity": "45" } },
     { "type": "wokwi-led", "id": "ledGreen", "top": 30, "left": 250, "attrs": { "color": "green" } },
     { "type": "wokwi-resistor", "id": "rGreen", "top": 55, "left": 200, "attrs": { "value": "220" } },
