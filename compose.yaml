@@ -1,0 +1,23 @@
+services:
+  api:
+    build: ./api
+    container_name: cp06-api
+    environment:
+      MQTT_BROKER: broker.hivemq.com
+      MQTT_PORT: "1883"
+      MQTT_TOPIC: edge/2ano/turma-nao-informada/cp06/equipe-b9c1a2/dados
+      MQTT_CLIENT_ID: cp06-api-equipe-b9c1a2
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
+
+  dashboard:
+    build: ./dashboard
+    container_name: cp06-dashboard
+    environment:
+      API_URL: http://api:5000/dados
+    ports:
+      - "5001:5001"
+    depends_on:
+      - api
+    restart: unless-stopped

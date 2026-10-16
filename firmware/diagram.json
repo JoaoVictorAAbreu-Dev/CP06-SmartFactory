@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "author": "Equipe CP06 - João Victor e Rodrigo Kenshin",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht", "top": -95, "left": 250, "attrs": { "temperature": "30", "humidity": "45" } },
+    { "type": "wokwi-led", "id": "ledGreen", "top": 30, "left": 250, "attrs": { "color": "green" } },
+    { "type": "wokwi-resistor", "id": "rGreen", "top": 55, "left": 200, "attrs": { "value": "220" } },
+    { "type": "wokwi-led", "id": "ledRed", "top": 110, "left": 250, "attrs": { "color": "red" } },
+    { "type": "wokwi-resistor", "id": "rRed", "top": 135, "left": 200, "attrs": { "value": "220" } }
+  ],
+  "connections": [
+    [ "esp:4", "dht:SDA", "green", [] ],
+    [ "esp:3V3", "dht:VCC", "red", [] ],
+    [ "esp:GND.1", "dht:GND", "black", [] ],
+    [ "esp:18", "rGreen:1", "green", [] ],
+    [ "rGreen:2", "ledGreen:A", "green", [] ],
+    [ "ledGreen:C", "esp:GND.1", "black", [] ],
+    [ "esp:19", "rRed:1", "red", [] ],
+    [ "rRed:2", "ledRed:A", "red", [] ],
+    [ "ledRed:C", "esp:GND.1", "black", [] ]
+  ],
+  "dependencies": {}
+}
